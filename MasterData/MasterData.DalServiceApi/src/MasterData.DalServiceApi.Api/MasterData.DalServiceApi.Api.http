@@ -1,0 +1,6 @@
+@MasterData.DalServiceApi.Api_HostAddress = http://localhost:5183
+
+GET {{MasterData.DalServiceApi.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

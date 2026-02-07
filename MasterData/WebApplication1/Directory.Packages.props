@@ -1,0 +1,60 @@
+﻿<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Dapper" Version="2.1.66" />
+    <PackageVersion Include="FluentValidation" Version="12.1.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="8.0.22" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.22" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.22" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.22" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.FileExtensions" Version="8.0.1" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="8.0.1" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="8.0.22" />
+    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.11" />
+    <PackageVersion Include="Oracle.EntityFrameworkCore" Version="8.23.26000" />
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageVersion Include="coverlet.collector" Version="6.0.0" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageVersion Include="xunit" Version="2.5.3" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.5.3" />
+
+    <PackageVersion Include="NavaKit.Application.Abstractions" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Application" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Bootstrapper" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Domain" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Shared" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.ExecutionContext" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.ExecutionContext.AspNetCore" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Security" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Security.AspNetCore" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Logging.Abstractions" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Logging.Microsoft" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Logging.Serilog" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Observability.Abstractions" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Observability.OpenTelemetry" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Localization.Abstractions" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Localization" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Validation.FluentValidation" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Data.Abstractions" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Data.EFCore" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Data.Dapper" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Messaging.Abstractions" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Messaging" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Messaging.ExecutionContext" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Messaging.Inbox.EFCore" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Messaging.Outbox.EFCore" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Messaging.Kafka" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Caching.Abstractions" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Caching.InMemory" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Caching.Redis" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Caching.Composite" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Billing.Abstractions" Version="1.0.47" />
+    <PackageVersion Include="NavaKit.Billing" Version="1.0.47" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,41 @@
+using MasterData.CQRS.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+
+namespace MasterData.CQRS.Infrastructure.Persistence;
+
+/// <summary>
+/// کانتکست دیتابیس CQRS - CQRS Database Context
+/// </summary>
+public class CqrsDbContext : DbContext
+{
+    public DbSet<Province> Provinces { get; set; } = null!;
+
+    public CqrsDbContext(DbContextOptions<CqrsDbContext> options) : base(options)
+    {
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        // Province Configuration
+        modelBuilder.Entity<Province>(entity =>
+        {
+            entity.ToTable("Provinces");
+            entity.HasKey(p => p.Id);
+            
+            entity.Property(p => p.Name)
+                .IsRequired()
+                .HasMaxLength(50);
+
+            entity.HasIndex(p => p.Name)
+                .IsUnique()
+                .HasDatabaseName("IX_Provinces_Name");
+
+            entity.Property(p => p.CreatedAt)
+                .IsRequired();
+
+            entity.Property(p => p.UpdatedAt);
+        });
+    }
+}
