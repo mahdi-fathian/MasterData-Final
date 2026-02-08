@@ -5,9 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MasterData.EventDriven.Infrastructure.Repositories;
 
-/// <summary>
-/// پیاده‌سازی مخزن استان - Province Repository Implementation
-/// </summary>
+
 public class ProvinceRepository : IProvinceRepository
 {
     private readonly EventDrivenDbContext _context;
