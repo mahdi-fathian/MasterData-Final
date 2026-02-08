@@ -3,9 +3,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MasterData.DalServiceApi.DAL;
 
-/// <summary>
-/// کانتکست دیتابیس - Database Context
-/// </summary>
 public class AppDbContext : DbContext
 {
     public DbSet<Province> Provinces { get; set; } = null!;
