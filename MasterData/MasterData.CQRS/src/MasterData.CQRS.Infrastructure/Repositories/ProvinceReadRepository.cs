@@ -5,9 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MasterData.CQRS.Infrastructure.Repositories;
 
-/// <summary>
-/// پیاده‌سازی مخزن استان برای عملیات خواندنی - Province Read Repository Implementation for Read Operations
-/// </summary>
+
 public class ProvinceReadRepository : IProvinceReadRepository
 {
     private readonly CqrsDbContext _context;
