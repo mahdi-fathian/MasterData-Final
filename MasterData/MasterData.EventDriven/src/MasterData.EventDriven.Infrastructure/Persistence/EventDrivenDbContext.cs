@@ -3,9 +3,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MasterData.EventDriven.Infrastructure.Persistence;
 
-/// <summary>
-/// کانتکست دیتابیس Event-Driven - Event-Driven Database Context
-/// </summary>
 public class EventDrivenDbContext : DbContext
 {
     public DbSet<Province> Provinces { get; set; } = null!;
