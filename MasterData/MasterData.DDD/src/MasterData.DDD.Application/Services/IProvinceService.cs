@@ -2,9 +2,7 @@ using MasterData.DDD.Application.DTOs;
 
 namespace MasterData.DDD.Application.Services;
 
-/// <summary>
-/// رابط سرویس استان - Province Service Interface
-/// </summary>
+
 public interface IProvinceService
 {
     Task<ProvinceDto> CreateProvinceAsync(CreateProvinceRequest request, CancellationToken cancellationToken = default);
