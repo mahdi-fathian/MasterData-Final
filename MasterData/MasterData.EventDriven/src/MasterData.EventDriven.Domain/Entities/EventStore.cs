@@ -1,8 +1,5 @@
 namespace MasterData.EventDriven.Domain.Entities;
 
-/// <summary>
-/// ذخیره‌ساز رویدادها - Event Store for Event Sourcing
-/// </summary>
 public class EventStore
 {
     public Guid Id { get; set; }
