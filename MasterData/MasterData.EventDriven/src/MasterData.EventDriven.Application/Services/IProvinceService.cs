@@ -2,9 +2,6 @@ using MasterData.EventDriven.Application.DTOs;
 
 namespace MasterData.EventDriven.Application.Services;
 
-/// <summary>
-/// رابط سرویس استان - Province Service Interface
-/// </summary>
 public interface IProvinceService
 {
     Task<ProvinceDto> RegisterProvinceAsync(RegisterProvinceRequest request, CancellationToken cancellationToken = default);
