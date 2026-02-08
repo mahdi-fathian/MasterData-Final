@@ -2,9 +2,6 @@ using MasterData.DalServiceApi.Models.DTOs;
 
 namespace MasterData.DalServiceApi.Service.Services;
 
-/// <summary>
-/// رابط سرویس استان - Province Service Interface
-/// </summary>
 public interface IProvinceService
 {
     Task<ProvinceDto> CreateAsync(CreateProvinceDto dto);
