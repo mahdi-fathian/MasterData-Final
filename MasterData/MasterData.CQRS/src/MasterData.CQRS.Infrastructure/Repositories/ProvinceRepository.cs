@@ -5,9 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MasterData.CQRS.Infrastructure.Repositories;
 
-/// <summary>
-/// پیاده‌سازی مخزن استان برای عملیات نوشتاری - Province Repository Implementation for Write Operations
-/// </summary>
+
 public class ProvinceRepository : IProvinceRepository
 {
     private readonly CqrsDbContext _context;
