@@ -5,9 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace MasterData.CQRS.Application.Handlers;
 
-/// <summary>
-/// پردازشگر دستور حذف استان - Delete Province Command Handler
-/// </summary>
+
 public class DeleteProvinceCommandHandler : IRequestHandler<DeleteProvinceCommand, bool>
 {
     private readonly IProvinceRepository _repository;
