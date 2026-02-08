@@ -1,8 +1,5 @@
 namespace MasterData.EventDriven.Domain.Entities;
 
-/// <summary>
-/// پیام صندوق خروجی - Outbox Message for reliable event publishing
-/// </summary>
 public class OutboxMessage
 {
     public Guid Id { get; set; }
