@@ -5,9 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace MasterData.CQRS.Application.Handlers;
 
-/// <summary>
-/// پردازشگر دستور بروزرسانی استان - Update Province Command Handler
-/// </summary>
+
 public class UpdateProvinceCommandHandler : IRequestHandler<UpdateProvinceCommand, bool>
 {
     private readonly IProvinceRepository _repository;
