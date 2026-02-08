@@ -4,9 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MasterData.DDD.Api.Controllers;
 
-/// <summary>
-/// کنترلر استان - Province Controller
-/// </summary>
+
 [ApiController]
 [Route("api/[controller]")]
 public class ProvinceController : ControllerBase
@@ -20,9 +18,7 @@ public class ProvinceController : ControllerBase
         _logger = logger;
     }
 
-    /// <summary>
-    /// دریافت تمام استان‌ها - Get all provinces
-    /// </summary>
+
     [HttpGet]
     public async Task<IActionResult> GetAll(CancellationToken cancellationToken)
     {
@@ -38,9 +34,6 @@ public class ProvinceController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// دریافت استان‌های فعال - Get active provinces
-    /// </summary>
     [HttpGet("active")]
     public async Task<IActionResult> GetActive(CancellationToken cancellationToken)
     {
@@ -56,9 +49,7 @@ public class ProvinceController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// دریافت استان با شناسه - Get province by id
-    /// </summary>
+    
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id, CancellationToken cancellationToken)
     {
@@ -78,9 +69,7 @@ public class ProvinceController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// ایجاد استان جدید - Create new province
-    /// </summary>
+  
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateProvinceRequest request, CancellationToken cancellationToken)
     {
@@ -104,9 +93,7 @@ public class ProvinceController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// بروزرسانی استان - Update province
-    /// </summary>
+
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, [FromBody] UpdateProvinceRequest request, CancellationToken cancellationToken)
     {
@@ -134,9 +121,7 @@ public class ProvinceController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// غیرفعال کردن استان - Deactivate province
-    /// </summary>
+
     [HttpPatch("{id}/deactivate")]
     public async Task<IActionResult> Deactivate(int id, CancellationToken cancellationToken)
     {
@@ -156,9 +141,7 @@ public class ProvinceController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// فعال کردن استان - Activate province
-    /// </summary>
+ 
     [HttpPatch("{id}/activate")]
     public async Task<IActionResult> Activate(int id, CancellationToken cancellationToken)
     {
@@ -178,9 +161,7 @@ public class ProvinceController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// حذف استان - Delete province
-    /// </summary>
+
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id, CancellationToken cancellationToken)
     {
