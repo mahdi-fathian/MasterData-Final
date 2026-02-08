@@ -2,9 +2,6 @@ using MasterData.DalServiceApi.Models;
 
 namespace MasterData.DalServiceApi.DAL.Repositories;
 
-/// <summary>
-/// رابط مخزن استان - Province Repository Interface
-/// </summary>
 public interface IProvinceRepository
 {
     Task<Province?> GetByIdAsync(int id);
