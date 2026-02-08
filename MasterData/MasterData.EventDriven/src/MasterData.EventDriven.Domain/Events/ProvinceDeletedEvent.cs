@@ -1,8 +1,5 @@
 namespace MasterData.EventDriven.Domain.Events;
 
-/// <summary>
-/// رویداد: استان حذف شد - Province Deleted Event
-/// </summary>
 public class ProvinceDeletedEvent : DomainEvent
 {
     public int ProvinceId { get; set; }
