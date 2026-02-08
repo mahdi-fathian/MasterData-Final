@@ -2,9 +2,7 @@ using MasterData.DDD.Domain.SeedWork;
 
 namespace MasterData.DDD.Domain.ValueObjects;
 
-/// <summary>
-/// شیء ارزشی نام استان - Province Name Value Object
-/// </summary>
+
 public class ProvinceName : ValueObject
 {
     public string Value { get; private set; }
