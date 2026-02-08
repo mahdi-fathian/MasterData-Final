@@ -1,8 +1,6 @@
 namespace MasterData.DDD.Domain.SeedWork;
 
-/// <summary>
-/// کلاس پایه موجودیت - Base Entity Class
-/// </summary>
+
 public abstract class Entity
 {
     private int _id;
