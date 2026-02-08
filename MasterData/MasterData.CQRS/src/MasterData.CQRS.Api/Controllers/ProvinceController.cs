@@ -5,9 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MasterData.CQRS.Api.Controllers;
 
-/// <summary>
-/// کنترلر استان - Province Controller
-/// </summary>
+
 [ApiController]
 [Route("api/[controller]")]
 public class ProvinceController : ControllerBase
@@ -40,9 +38,7 @@ public class ProvinceController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// دریافت استان با شناسه - Get province by id
-    /// </summary>
+
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id, CancellationToken cancellationToken)
     {
@@ -63,9 +59,7 @@ public class ProvinceController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// ثبت استان جدید - Register new province
-    /// </summary>
+    
     [HttpPost]
     public async Task<IActionResult> Register([FromBody] RegisterProvinceRequest request, CancellationToken cancellationToken)
     {
@@ -113,9 +107,7 @@ public class ProvinceController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// حذف استان - Delete province
-    /// </summary>
+
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id, CancellationToken cancellationToken)
     {
@@ -137,12 +129,8 @@ public class ProvinceController : ControllerBase
     }
 }
 
-/// <summary>
-/// درخواست ثبت استان - Register Province Request
-/// </summary>
+
 public record RegisterProvinceRequest(string Name);
 
-/// <summary>
-/// درخواست بروزرسانی استان - Update Province Request
-/// </summary>
+
 public record UpdateProvinceRequest(string Name);
