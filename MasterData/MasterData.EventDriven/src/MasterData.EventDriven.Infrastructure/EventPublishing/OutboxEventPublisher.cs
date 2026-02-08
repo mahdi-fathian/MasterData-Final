@@ -7,9 +7,6 @@ using System.Text.Json;
 
 namespace MasterData.EventDriven.Infrastructure.EventPublishing;
 
-/// <summary>
-/// انتشار رویدادها با استفاده از الگوی Outbox - Outbox Pattern Event Publisher
-/// </summary>
 public class OutboxEventPublisher : IEventPublisher
 {
     private readonly EventDrivenDbContext _context;
