@@ -2,9 +2,6 @@ using MasterData.EventDriven.Domain.Events;
 
 namespace MasterData.EventDriven.Domain.Entities;
 
-/// <summary>
-/// موجودیت استان - Province Entity
-/// </summary>
 public class Province
 {
     private readonly List<DomainEvent> _events = new();
@@ -27,9 +24,6 @@ public class Province
         IsDeleted = false;
     }
 
-    /// <summary>
-    /// ثبت استان جدید - Register new province
-    /// </summary>
     public static Province Register(string name)
     {
         if (string.IsNullOrWhiteSpace(name))
@@ -42,18 +36,12 @@ public class Province
         return province;
     }
 
-    /// <summary>
-    /// تنظیم شناسه پس از ذخیره‌سازی - Set Id after save
-    /// </summary>
     public void SetId(int id)
     {
         Id = id;
         AddEvent(new ProvinceRegisteredEvent(Id, Name, CreatedAt));
     }
 
-    /// <summary>
-    /// بروزرسانی نام استان - Update province name
-    /// </summary>
     public void UpdateName(string newName)
     {
         if (string.IsNullOrWhiteSpace(newName))
@@ -69,9 +57,6 @@ public class Province
         AddEvent(new ProvinceNameUpdatedEvent(Id, oldName, Name, UpdatedAt.Value));
     }
 
-    /// <summary>
-    /// حذف استان - Delete province
-    /// </summary>
     public void Delete()
     {
         IsDeleted = true;
