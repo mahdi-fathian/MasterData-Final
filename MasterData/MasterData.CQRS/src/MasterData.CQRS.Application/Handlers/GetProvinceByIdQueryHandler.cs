@@ -5,9 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace MasterData.CQRS.Application.Handlers;
 
-/// <summary>
-/// پردازشگر پرس‌وجوی دریافت استان با شناسه - Get Province By Id Query Handler
-/// </summary>
+
 public class GetProvinceByIdQueryHandler : IRequestHandler<GetProvinceByIdQuery, ProvinceDto?>
 {
     private readonly IProvinceReadRepository _repository;
