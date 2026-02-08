@@ -2,9 +2,6 @@ using MasterData.EventDriven.Domain.Entities;
 
 namespace MasterData.EventDriven.Application.Interfaces;
 
-/// <summary>
-/// رابط مخزن استان - Province Repository Interface
-/// </summary>
 public interface IProvinceRepository
 {
     Task<Province?> GetByIdAsync(int id, CancellationToken cancellationToken = default);
