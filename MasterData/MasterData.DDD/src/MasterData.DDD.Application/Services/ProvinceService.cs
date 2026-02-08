@@ -5,9 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace MasterData.DDD.Application.Services;
 
-/// <summary>
-/// سرویس استان - Province Service Implementation
-/// </summary>
+
 public class ProvinceService : IProvinceService
 {
     private readonly IProvinceRepository _repository;
