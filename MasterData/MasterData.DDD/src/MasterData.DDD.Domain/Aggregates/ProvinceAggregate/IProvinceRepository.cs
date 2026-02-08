@@ -2,9 +2,6 @@ using MasterData.DDD.Domain.SeedWork;
 
 namespace MasterData.DDD.Domain.Aggregates.ProvinceAggregate;
 
-/// <summary>
-/// رابط مخزن استان - Province Repository Interface
-/// </summary>
 public interface IProvinceRepository
 {
     Task<Province?> GetByIdAsync(int id, CancellationToken cancellationToken = default);
