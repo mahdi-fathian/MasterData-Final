@@ -1,8 +1,5 @@
 namespace MasterData.EventDriven.Application.DTOs;
 
-/// <summary>
-/// DTO استان - Province Data Transfer Object
-/// </summary>
 public record ProvinceDto(
     int Id,
     string Name,
