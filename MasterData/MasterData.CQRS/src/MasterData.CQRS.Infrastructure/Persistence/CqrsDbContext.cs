@@ -3,9 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MasterData.CQRS.Infrastructure.Persistence;
 
-/// <summary>
-/// کانتکست دیتابیس CQRS - CQRS Database Context
-/// </summary>
+
 public class CqrsDbContext : DbContext
 {
     public DbSet<Province> Provinces { get; set; } = null!;
