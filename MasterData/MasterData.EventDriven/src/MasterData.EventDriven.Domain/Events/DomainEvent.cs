@@ -1,8 +1,5 @@
 namespace MasterData.EventDriven.Domain.Events;
 
-/// <summary>
-/// کلاس پایه رویداد دامنه - Base Domain Event
-/// </summary>
 public abstract class DomainEvent
 {
     public Guid EventId { get; set; } = Guid.NewGuid();
