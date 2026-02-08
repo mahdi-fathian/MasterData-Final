@@ -1,8 +1,5 @@
 namespace MasterData.DalServiceApi.Models;
 
-/// <summary>
-/// مدل استان - Province Model
-/// </summary>
 public class Province
 {
     public int Id { get; set; }
