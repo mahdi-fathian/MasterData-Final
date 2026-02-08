@@ -5,9 +5,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MasterData.DDD.Infrastructure.Persistence;
 
-/// <summary>
-/// کانتکست دیتابیس DDD - DDD Database Context
-/// </summary>
 public class DddDbContext : DbContext, IUnitOfWork
 {
     public DbSet<Province> Provinces { get; set; } = null!;
