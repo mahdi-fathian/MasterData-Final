@@ -6,9 +6,7 @@ using Microsoft.Extensions.Logging;
 
 namespace MasterData.CQRS.Application.Handlers;
 
-/// <summary>
-/// پردازشگر دستور ثبت استان - Register Province Command Handler
-/// </summary>
+
 public class RegisterProvinceCommandHandler : IRequestHandler<RegisterProvinceCommand, RegisterProvinceCommandResult>
 {
     private readonly IProvinceRepository _repository;
