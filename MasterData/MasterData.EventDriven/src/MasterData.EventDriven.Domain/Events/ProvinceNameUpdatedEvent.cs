@@ -1,8 +1,6 @@
 namespace MasterData.EventDriven.Domain.Events;
 
-/// <summary>
-/// رویداد: نام استان بروزرسانی شد - Province Name Updated Event
-/// </summary>
+
 public class ProvinceNameUpdatedEvent : DomainEvent
 {
     public int ProvinceId { get; set; }
